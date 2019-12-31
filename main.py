@@ -1,5 +1,9 @@
+from models.News import News
+
 def main():
-    print('Hello, World!')
-    
+    news = News.getRandomNews()
+    print(news['title'])
+    print(news['description'])
+
 if __name__ == '__main__':
     main()
